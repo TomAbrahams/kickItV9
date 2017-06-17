@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_suggest_on_gps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.kickitvx.thomas.kickitv7.suggestOnGPS">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/btnBkChEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/Aqua"
+            android:text="Back"
+            android:textAllCaps="false"
+            tools:layout_width="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/tvTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What are you looking for?"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="What do you desire?"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSuggestGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/RoyalBlue"
+                android:text="Make a \nSuggestion"
+                android:textAllCaps="false" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnYelpTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/LightGreen"
+                android:text="Search Right Now"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results (click on them to add them)"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvRecEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/IndianRed"
+            android:textColor="@color/AliceBlue"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Nothing to Recommend"
+            tools:layout_width="match_parent" />
+
+        <TextView
+            android:id="@+id/tvRecEvent2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@color/Bisque"
+            android:text="Nothing to Recommend"
+            tools:layout_width="match_parent" />
+
+        <TextView
+            android:id="@+id/tvRecEvent3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/LemonChiffon"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Nothing to Recommend"
+            tools:layout_width="match_parent"
+            tools:text="Nothing to Recommend" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.kickitvx.thomas.kickitv7.showItems">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEvent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event 1" />
+
+                <TextView
+                    android:id="@+id/tvEventNum1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="First Event" />
+
+                <TextView
+                    android:id="@+id/tvEvent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event 2" />
+
+                <TextView
+                    android:id="@+id/tvEventNum2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Second Event" />
+
+                <TextView
+                    android:id="@+id/tvEvent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event 3" />
+
+                <TextView
+                    android:id="@+id/tvEventNum3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Third Event" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnMapEvent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Map Event 1"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btnMapEvent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Map Event 2"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btnMapEvent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Map Event 3"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBackToMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:text="Back"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_purple"
+                android:text="Chat"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnParty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/RoyalBlue"
+                android:textAllCaps="false"
+                android:text="Party" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
